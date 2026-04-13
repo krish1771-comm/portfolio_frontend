@@ -1,0 +1,71 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.folder-icon {
+  font-size: 2.5rem;
+}
+
+.external-link {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  transition: color 0.3s;
+}
+
+.external-link:hover {
+  color: var(--primary);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--text-main);
+  transition: color 0.3s;
+}
+
+.project-card:hover .project-title {
+  color: var(--primary);
+}
+
+.project-description {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-tech {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
